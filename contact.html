@@ -26,8 +26,13 @@ nav {
             background-color: #fff;
             border-radius: 20px;
             box-shadow: 10px 10px 10px 10px gray;
+            transform: translateY(-20px); /* Lifts the container upwards */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        
+        .container:hover{
+            transform: translateY(-30px); /* Lifts the container further when hovered */
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+        }
         form {
             display: flex;
             flex-direction: column;
